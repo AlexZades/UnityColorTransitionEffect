@@ -1,7 +1,5 @@
 using System;
 using System.Collections;
-using System.Collections.Generic;
-using System.Drawing;
 using UnityEngine;
 
 [Serializable]
@@ -40,19 +38,19 @@ public class ColorTransitionEffect : MonoBehaviour
             throw new ArgumentException($"Color Array contains less than two colors (Legth = {colors.Length})");
         }
         if(autoStart)
-            colorRoutine = StartEffect();
+             StartEffect();
     }
 
     /// <summary>
     /// Starts the color transition effect
     /// </summary>
     /// <returns>Color effect coroutine</returns>
-    public Coroutine StartEffect()
+    public void StartEffect()
     {
         lastColor = colors[colorIndex];
         colorIndex++;
         
-        return StartCoroutine(TweenColor(colors[colorIndex]));
+        colorRoutine = StartCoroutine(TweenColor(colors[colorIndex]));
     }
 
     /// <summary>
