@@ -18,4 +18,4 @@ Then checking the shader properties for the name of the color property.
 6. Set the "Auto Start" property to true in the inspector. You're done!
 
 ## Starting the effect programmatically
-To start the effect from another script set the "Auto Start" property to false in the inspector. You can call `StartEffect` to start the effect. The effect runs in a coroutine which can be stopped using 'StopEffect'. The currently active coroutine is stored in the 'colorRoutine' field. 
+To start the effect from another script set the "Auto Start" property to false in the inspector. You can call `StartEffect` to start the effect. The effect runs in a coroutine which can be stopped using `StopEffect`. The currently active coroutine is stored in the 'colorRoutine' field. 
