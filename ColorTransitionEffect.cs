@@ -44,7 +44,6 @@ public class ColorTransitionEffect : MonoBehaviour
     /// <summary>
     /// Starts the color transition effect
     /// </summary>
-    /// <returns>Color effect coroutine</returns>
     public void StartEffect()
     {
         lastColor = colors[colorIndex];
